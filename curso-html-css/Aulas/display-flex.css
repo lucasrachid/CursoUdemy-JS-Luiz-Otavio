@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    /*Quando coloco Display Flex, eu libero por padrão, diversas opções de configuração, sendo alguma delas, Flex-Direction, justify-content, align-items */
+    background-color: yellow;
+    flex-flow: nowrap;
+    justify-content: space-between; 
+    height: 800px;
+    align-items: flex-start;
+    /*flex-wrap, permite que quando o elemento não couber na tela, seja feita uma quebra de linha */
+}
+
+
+.flex-item {
+    background-color: red;
+    color: white;
+    flex: 1 1 320px;
+}
+
+.flex-item:nth-child(2) {
+    background-color: purple;
+}
+
+.flex-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(4) {
+    align-self: center;
+}
+
+
+
+/* "flex-grow: 1" pega todo espaço da tela que está SOBRRANDO, e dividi entre os elementos */
+
+/* "flex-basis: 320px;" define o espaço de 320px reservado aos elementos */
+
+/* "flex-shrink: 0" Não permite que o elemento não diminua os px.
+
+/* "flex: (grow) (shrink) (basis)" atalho, na sequência. Sempre utilizar o atalho */
+

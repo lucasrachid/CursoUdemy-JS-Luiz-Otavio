@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("/Digimon/font/Poppins-Light.ttf")
+}
+
+
+* {
+    margin:0;
+    padding:0;
+    font-family: "Poppins-Light";
+}
+
+header {
+    text-align: center;
+    text-decoration: none;
+    height: 400px;
+    background-color: lightblue;
+    box-sizing: border-box;
+    /* box-sizing é utilizado para que a caixa tenha no total de altura 300px, e quando inserir padding ou margin nos elemetos dentro da caixa, tipo h1 e p, ele não "some" a caixa, e mantenha o height final de 300px*/
+    background-image: url(/Digimon/img/fundo.jpg);
+    background-size: 1600px 400px;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    padding-top: 250px;
+    width: 200px;
+    height: 100px;
+}
+
+nav {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    box-sizing: border-box;
+    height: 40px;
+    background-color: rgb(98, 98, 228);
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(98, 98, 228, 1);
+    transition: all 0.4s ease-out;
+    border: 3px solid white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(98, 98, 228);
+    color: white;
+    text-align: center;
+    height: 70px;
+    display: flex;
+}
+
+footer h6 {
+    padding-top: 5px;
+}
+
+.p {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer li {
+    margin-left: 20px;
+}
+
+footer div {
+    width: 80%;
+}
+
+#list-footer {
+    width: 20%;
+    margin: 10px;
+}
+
+.img-f, .img-i, .img-t {
+    width: 30px;
+    height: 30px;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    padding: 10px 0px 0px 50px;
+}
+
+#bandai-1, #bandai-2 {
+    padding-left: 300px;
+}
+
+section {
+    background-color: rgb(144, 144, 247);
+}
+
+section div article ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.lista {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px 0px 20px 150px;
+    width: 500px;
+    display: flex;
+}
+
+.lista a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

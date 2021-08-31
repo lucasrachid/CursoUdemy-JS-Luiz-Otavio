@@ -1,0 +1,36 @@
+h1:hover {
+    background-color: red;
+}
+h1 {
+    transition: all 0.5s ease-out;
+}
+
+a {
+    color: darkorange;
+}
+
+a:link {
+    color:turquoise
+}
+/* Links que nunca foram visitados*/
+
+a:visited {
+    color: violet;
+}
+/* Links que já foram visitados */
+
+a:active {
+    background-color: teal;
+    color: white;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+.puto:checked + p {
+    background-color: red;
+}
+/* Quando a caixa estiver marcada, somente o primeiro P, após ela, trocará a cor do fundo */

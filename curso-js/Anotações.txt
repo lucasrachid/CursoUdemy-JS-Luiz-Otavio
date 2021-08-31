@@ -1,0 +1,25 @@
+window.alert
+console.log
+window.confirm
+window.prompt
+
+Funções: alert(); log(); confirm(); prompt();
+
+Objeto: window, console.
+
+Quando uma função está dentro de um objeto, é chamada de método, se tiver fora, mantém o nome de função.
+
+Pode transformar uma string em número da seguinte forma.
+
+nomeDaVariavel = parseFloat(nomeDaVariavel) ou nomeDaVariavel = parseInt(nomeDaVariavel) ou nomeDaVariavel = Number(nomeDaVariavel)
+
+utilize typeof para ver o tipo primitivo do dado, se ele é string, number, boolean.
+
+Três formas de colocar a mesma coisa no alert ou somar variáveis.
+
+// alert("O resultado foi " + soma);
+// alert(`O resultado foi: ${soma}`);
+// alert(`O resultado foi: ${num1 + num2}`);
+
+Quando eu precisar colocar aspas duplas em um texto, tenho que colocar da seguinte forma: "Um \"texto\""
+Basicamente escrever dentro de \" Texto \"

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Menu</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quem Sou</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet sit culpa obcaecati totam nostrum similique odit suscipit, provident dolor debitis quibusdam. Dicta, ab? Rem adipisci distinctio ut architecto sequi nulla.</p>
+    <div class="tabela">
+        <table>
+            <caption>Uma descrição para tabela</caption>
+            <thead>
+                <tr>
+                    <th>Título 01</th>
+                    <th>Título 02</th>
+                    <th>Título 03</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td colspan="2">Mesclando Linha</td>
+                    <td>Corpo 03</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Mesclando a coluna</td>
+                    <td>Corpo 05</td>
+                    <td>Corpo 06</td>
+                </tr>
+                <tr>
+                    <td>Corpo 08</td>
+                    <td>Corpo 09</td>
+                </tr>
+            </tbody>
+                <!--tag TR para as Linhas da tabela e TD e TH para colunas-->
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2">Corpo 10, 11 e 12</td>
+                    <td>TOTAL: R$ 555,00</td>
+                </tr>
+            </tfoot>
+            </thead>
+        </table>
+    </div>
+    <div class="formulario01">
+        <section>
+            <form action="#" method="get" target="_self" autocomplete="off">
+                <h1>Cabeçalho</h1>
+                <p>Formulário</p>
+                <fieldset>
+                    <legend>Descrição</legend>
+                    <p>
+                        <label>
+                            Nome:
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            Acesso developer, marque a caixa.
+                            <input type="checkbox" id="dev" name="dev" value="sim">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Senha:
+                            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                        </label>
+                    </p>
+                    <p> Qual o seu gênero ? <br>
+                        <label for="feminino"> Feminino
+                            <input type="radio" id="feminino" name="genero" value="feminino">
+                        </label><br>
+                        <label for="masculino"> Masculino
+                            <input type="radio" id="masculino" name="genero" value="masculino">
+                        </label><br>
+                        <label for="undefined"> Prefiro não informar
+                            <input type="radio" id="undefined" name="genero" value="undefined">
+                        </label>
+                    </p>
+                    <p>O meu formulário</p>
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Reset</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <br>
+    <div class="formulario02">
+        <section>
+            <form action="#" method="get" target="_self" autocomplete="off">
+                <h1>Segundo formulário</h1>
+                <p>Formulário 02</p>
+                <fieldset>
+                    <legend>Descrição</legend>
+                    <p>
+                        <label>
+                            Data:
+                            <input type="date" id="date" name="date" value="2021-06-08">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Sua foto:
+                            <input type="file" id="file" name="file" accpept=".png,.pdf,image/*" multiple>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Número
+                            <input type="number" id="number" name="number" min="10" max="999" step="5" placeholder="Digite um número">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Min
+                            <input type="range" id="range" name="range" list="tickmarks"> Max
+                        </label>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100">
+                          </datalist>
+                    </p> 
+                    <p>
+                        <label>
+                            Sua URL:
+                            <input type="url" id="url" name="url" placeholder="Digite sua URL">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Procurar URL:
+                            <input type="search" id="search" name="search" placeholder="Procurar URL" name="search">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="select">
+                            Selecione alguma opção:
+                        </label>
+                        <select id="select" name="select">
+                            <optgroup label="Teste01">
+                                <option value="ssj1">Super Sayajin 01</option>
+                                <option value="ssj2">Super Sayajin 02</option>
+                                <option value="ssj3">Super Sayajin 03</option>
+                            </optgroup>
+                            <optgroup label="Teste02">
+                                <option value="ssj4">Super Sayajin 04</option>
+                                <option value="ssjg1">Super Sayajin God 1</option>
+                                <option value="ssjg2">Super Sayajin God 02</option>
+                            </optgroup>
+                        </select>
+                        
+                    </p>
+                    <p>
+                        <label for="textarea">Area de texto:</label>
+                        <textarea name="textarea" id="textarea" rows="8" ></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Reset</button>
+                    </p>    
+                </fieldset>
+                <p>Final</p>  
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>

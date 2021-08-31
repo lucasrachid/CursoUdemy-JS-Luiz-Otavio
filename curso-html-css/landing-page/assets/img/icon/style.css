@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?yk4m3p');
+  src:  url('fonts/icomoon.eot?yk4m3p#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yk4m3p') format('truetype'),
+    url('fonts/icomoon.woff?yk4m3p') format('woff'),
+    url('fonts/icomoon.svg?yk4m3p#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-up:before {
+  content: "\e90e";
+}
+.icon-phone:before {
+  content: "\e900";
+}
+.icon-balana:before {
+  content: "\e901";
+}
+.icon-banco:before {
+  content: "\e902";
+}
+.icon-calculadora:before {
+  content: "\e903";
+}
+.icon-close:before {
+  content: "\e904";
+}
+.icon-facebook:before {
+  content: "\e905";
+}
+.icon-instagram:before {
+  content: "\e906";
+}
+.icon-mail:before {
+  content: "\e907";
+}
+.icon-mao-dinheiro:before {
+  content: "\e908";
+}
+.icon-map-pin:before {
+  content: "\e909";
+}
+.icon-menu:before {
+  content: "\e90a";
+}
+.icon-porco:before {
+  content: "\e90b";
+}
+.icon-whatsapp:before {
+  content: "\e90c";
+}
+.icon-youtube:before {
+  content: "\e90d";
+}

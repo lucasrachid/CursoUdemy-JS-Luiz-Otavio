@@ -1,0 +1,268 @@
+:root {
+  --primary-color: #0a1128;
+  --secondary-color: rgb(35, 109, 109);
+  --white-color: white;
+  --light-gray-color: #eeeeee;
+  --gap: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+@font-face {
+  font-family: "Gobold-uplow";
+  src: url("/curso-html-css/landing-page/assets/font/Gobold\ Uplow.otf");
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 5.5rem;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+
+.main-bg {
+  background-image: url(/curso-html-css/landing-page/assets/img/main-bg.svg);
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+
+.white-bg {
+  background-color: var(--white-color);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+#logo {
+  font-family: "Gobold-uplow";
+}
+
+#span-1,
+#span-3 {
+  color: var(--secondary-color);
+}
+aside h1 {
+  display: flex;
+  align-items: center;
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+}
+
+aside h1 a {
+  color: #0a1128;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+aside nav ul li {
+  list-style: none;
+}
+
+aside nav ul li a {
+  text-decoration: none;
+  color: #0a1128;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-right: 1.5625rem;
+  position: relative;
+}
+
+aside nav ul {
+  display: flex;
+}
+
+section {
+  height: 7rem;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+aside nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  width: 0;
+  height: 0.3rem;
+  background-color: var(--secondary-color);
+  transition: all 300ms ease-in-out;
+}
+
+aside nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+aside nav ul li a:hover::after {
+  width: 50%;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.container-2 {
+  display: block;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+/* HOME */
+#home {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+#home .intro-text-content {
+  order: 0;
+  width: fit-content;
+}
+
+#home .intro-image img {
+  height: 30rem;
+  border-radius: 3px;
+  order: 2;
+}
+
+#home h2 {
+  text-transform: uppercase;
+}
+
+/* DESCRIPTION */
+#description {
+  color: var(--primary-color);
+  padding-top: 10rem;
+}
+
+#description-box {
+  display: block;
+  margin: 5rem 30rem 0 30rem;
+}
+
+#description h2 {
+  text-transform: uppercase;
+}
+
+#description h2,
+#description p {
+  text-align: center;
+}
+
+#description p {
+  margin-bottom: 3rem;
+}
+
+/* GALLERY */
+#gallery {
+  padding-top: 10rem;
+}
+
+#gallery .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5rem;
+}
+
+#gallery .grid .test-1 {
+  order: 0;
+  margin-left: 20rem;
+}
+
+#gallery .grid .test-2 {
+  order: 2;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+#gallery .grid .test-3 {
+  order: 4;
+  margin-right: 20rem;
+}
+
+/* FOOTER */
+footer {
+  height: 10rem;
+  background-color: white;
+}
+
+#footer p {
+  font-size: 2rem;
+  color: var(--primary-color);
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+#footer span {
+  color: red;
+}
+
+.owner {
+  padding-top: 1.25rem;
+}
