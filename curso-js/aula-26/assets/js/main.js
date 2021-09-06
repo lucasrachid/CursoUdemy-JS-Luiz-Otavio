@@ -3,7 +3,7 @@ const altura = document.getElementById("height");
 
 document.getElementById("button").addEventListener("click", (event) => {
   event.preventDefault();
-  function openAndClose() {
+  function addAndRemove() {
     const toggle = document
       .getElementById("resultado")
       .classList.toggle("show");
@@ -14,7 +14,7 @@ document.getElementById("button").addEventListener("click", (event) => {
       document.getElementById("resultado").classList.remove("invalido");
     }
   }
-  openAndClose();
+  addAndRemove();
   const imc = calculoIMC(peso.value, altura.value);
   const resultado = document.getElementById("resultado");
 
