@@ -56,3 +56,8 @@ conta("+", 0, 20, 30, 40, 50);
 conta("-", 0, -50, 30);
 conta("*", 50, 2, 3);
 conta("/", 10, 2);
+
+const numbers = (...args) => {
+  console.log(args);
+};
+numbers("s", "+", 8, 9, 10);
