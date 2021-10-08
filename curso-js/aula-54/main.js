@@ -22,13 +22,13 @@ function f3(callback) {
   }, rand());
 }
 
-f1(() => {
-  f2(() => {
-    f3(() => {
-      console.log("Oá mundo.");
-    });
-  });
-});
+// f1(() => {
+//   f2(() => {
+//     f3(() => {
+//       console.log("Oá mundo.");
+//     });
+//   });
+// });
 
 f1(f1Callback);
 
